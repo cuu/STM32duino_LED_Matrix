@@ -12,3 +12,9 @@ HUB08
 + EN - Ouput Enable(active low) for 74HC595
 + LAT - data latch for 74HC595
 + R1,R2,G1,G2 data pin
+
+### Screenshots
+
+![Alt text](/screenshots/IMG_20151201_212956.jpg?raw=true "screenshot")
+![Alt text](/screenshots/IMG_20151201_214632.jpg?raw=true "screenshot")
+
