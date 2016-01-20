@@ -1,6 +1,6 @@
-STM32duino LED Matrix Library
+STM32duino LED Matrix Implimention
 ----------------------------
-demo 64x32 
+demo 64x32 or 128x32 
 74hc595 and 74hc245d
 
 shift register led matrix stm32duino library
