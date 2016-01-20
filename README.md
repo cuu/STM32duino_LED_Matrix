@@ -17,6 +17,7 @@ HUB08
 
 ![Alt text](/screenshots/IMG_20151201_212956.jpg?raw=true "screenshot")
 ![Alt text](/screenshots/IMG_20151201_214632.jpg?raw=true "screenshot")
+![Alt text](/screenshots/animation.gif?raw=true "screenshot")
 
 ### update
 --- 2016 01 20,add four basic led effects 
