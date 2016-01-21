@@ -199,6 +199,18 @@ int serial_parse_eqled(char*buffer,CONFIG*cfg)
     
     Serial.println();
     reset_effect(w);
+
+#ifdef LEFT_RIGHT_ADJUST  
+    if(w->eff.idx ==LEFTMOVE)
+    {
+      led_effect_left(scr,cfg);
+    }
+    
+    if(w->eff.idx ==RIGHTMOVE)
+    {
+      led_effect_right(scr,cfg);
+    } 
+#endif       
   }
   return 0;
 }

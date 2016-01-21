@@ -44,6 +44,9 @@
   
   unsigned char* buffer=NULL;
 
+void led_effect_left(uint8_t i,CONFIG*cfg);// align left display
+void led_effect_right(uint8_t i,CONFIG*cfg);// align right display;
+
   void led_move_down( int w,int h,byte rowstart, byte rowstop,byte *buffer);//eg:0-31
   void led_move_up( int w,int h,byte rowstart, byte rowstop,byte *buffer);// start 比 stop 要大,如 31->0  
   void led_move_right( int w,int h,byte rowstart, byte rowstop,byte *buffer);// 1,1,32

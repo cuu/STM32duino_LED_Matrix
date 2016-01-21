@@ -378,7 +378,7 @@ void led_effect_right(uint8_t i,CONFIG*cfg)// align right display
     w->eff.pixel_count =7;
     
     total_pix = cfg->width-1;
-
+    w->eff.moved_pix=0;
     
     while(w->last_zhn >= 0)
     {
@@ -386,6 +386,7 @@ void led_effect_right(uint8_t i,CONFIG*cfg)// align right display
       led_set_one_col(cfg->width,cfg->height,total_pix,offset_y,w->eff.pixel_count,w->eff.count%len,w->font_size,w->eff.pixel_count,buffer,w->hex);    
       w->eff.pixel_count--;
       total_pix--;
+      w->eff.moved_pix++;
       if(w->eff.pixel_count < 0)
       {
         w->eff.count--; // next word
@@ -415,13 +416,14 @@ void led_effect_left(uint8_t i,CONFIG*cfg)// align left display
     }
     w->eff.count = 0; //always reset
     total_pix = 0;
-    
+    w->eff.moved_pix=0;
     while(w->last_zhn >= 0)
     {
       
       led_set_one_col(cfg->width,cfg->height,total_pix,offset_y,w->eff.pixel_count,w->eff.count%len,w->font_size,w->eff.pixel_count,buffer,w->hex);    
       w->eff.pixel_count++;
       total_pix++;
+      w->eff.moved_pix++;
       if(w->eff.pixel_count >7)
       {
         w->eff.count++; // next word

@@ -25,6 +25,8 @@
 #define FONT_PIX16 16
 #define FONT_PIX32  32
 
+//#define LEFT_RIGHT_ADJUST 1   //代表LEFT 或是 RIGHT Move 首先会显示全部的字,然后开始慢慢的滚动
+
 void eqled_setup();
 int serial_parse_eqled(char*buffer,CONFIG*cfg);
 

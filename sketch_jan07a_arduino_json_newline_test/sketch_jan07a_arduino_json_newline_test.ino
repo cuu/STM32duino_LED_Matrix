@@ -12,7 +12,7 @@
 
 //develop log:
 //2016 01 19 四种特效搞定,剩下stalled效果,但是可以用了,32pix没有做
-
+//2016 01 20 stalled通过 一个函数led_check_stalled_time来实现,不能用delay,否则一个特效的delay会影响另一个特效,用计数的方式实现
 void setup() 
 {
   // put your setup code here, to run once:
